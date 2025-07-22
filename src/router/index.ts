@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SampleView from '../views/SampleView.vue'
+// Supports weights 100-900
+import '@fontsource-variable/lexend'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
