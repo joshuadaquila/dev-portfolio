@@ -12,7 +12,7 @@
       :animate="{ width: hover ? '33%' : '0%' }"
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >
-      <img src="/profilepic.jpg" alt="Cover" class="w-64 object-cover" />
+      <img :src="coverImage" alt="Cover" class="w-64 object-cover" />
     </motion.div>
 
     <!-- Text Content -->
@@ -51,6 +51,7 @@ defineProps<{
   title: string
   description: string
   techStack: string[]
+  coverImage: string
 }>()
 
 const hover = ref(false)

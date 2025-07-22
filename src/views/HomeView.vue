@@ -70,14 +70,12 @@
           class="flex-grow mt-4 overflow-y-auto rounded-md p-4 backdrop-blur-md bg-white bg-opacity-10"
         >
           <ProjectCard
-            v-for="i in 10"
+            v-for="(project, i) in projects"
             :key="i"
-            title="Portfolio Website"
-            description="A personal portfolio showcasing my projects, skills, and contact information, built with Vue and TailwindCSS."
-            :techStack="[
-              'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
-              'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-            ]"
+            :title="project.title"
+            :description="project.description"
+            :techStack="project.techStack"
+            :coverImage="project.coverImage"
           />
         </div>
       </div>
@@ -110,5 +108,29 @@ const techIcons = [
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg',
+]
+
+const projects = [
+  {
+    title: 'Portfolio Website',
+    description:
+      'A personal portfolio showcasing my projects, skills, and contact information, built with Vue and TailwindCSS.',
+    techStack: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    ],
+    coverImage: '/profilepic.jpg',
+  },
+  {
+    title: 'E-commerce Platform',
+    description:
+      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
+    techStack: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+    ],
+    coverImage: '/profilepic.jpg',
+  },
 ]
 </script>
