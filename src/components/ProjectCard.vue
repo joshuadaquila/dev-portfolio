@@ -12,7 +12,9 @@
       :animate="{ width: hover ? '33%' : '0%' }"
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >
-      <img :src="coverImage" alt="Cover" class="rounded-lg w-72 object-cover" />
+      <div v-viewer>
+        <img :src="coverImage" alt="Cover" class="rounded-lg w-72 object-cover cursor-pointer" />
+      </div>
     </motion.div>
 
     <!-- Text Content -->
