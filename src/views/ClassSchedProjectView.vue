@@ -13,7 +13,7 @@ const goback = () => {
 
 <template>
   <div
-    class="bg-[#041c32] min-h-screen flex text-white flex-col items-center justify-center relative overflow-hidden p-10"
+    class="bg-[#041c32] min-h-screen flex text-white flex-col items-center justify-center relative overflow-hidden p-6 lg:p-10"
   >
     <div class="fixed z-50 shadow-md top-0 left-0 p-4">
       <button
@@ -34,8 +34,33 @@ const goback = () => {
         College of Computer Studies <br />
         <span class="text-[#ecb365]">Web-Based Class Scheduling System</span>
       </h1>
-      <p class="mt-2 text-lg">Class Scheduling Made Effortless — One Click at a Time</p>
+      <p class="mt-2 text-lg text-center">Class Scheduling Made Effortless — One Click at a Time</p>
     </motion.div>
+
+    <p class="text-sm text-left mt-2">Technology and Tools Used:</p>
+    <div class="mb-2 flex bg-white bg-opacity-10 p-2 outline outline-white outline-1 rounded-xl">
+      <div class="flex flex-col items-center mx-1">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+          class="h-8 w-8"
+        />
+        <p class="text-xs">PHP</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+          class="h-8 w-8"
+        />
+        <p class="text-xs">MySQL</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          class="h-8 w-8"
+        />
+        <p class="text-xs">JavaScript</p>
+      </div>
+    </div>
 
     <div class="m-2 flex flex-col sm:flex-row text-sm">
       <button
@@ -132,7 +157,7 @@ const goback = () => {
       <div class="flex items-center justify-center" v-viewer>
         <img
           src="/webbasedls/ls4.webp"
-          alt="Dashboard Overview"
+          alt="User Management Panel"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
@@ -169,7 +194,7 @@ const goback = () => {
       <div class="flex items-center justify-center" v-viewer>
         <img
           src="/webbasedls/ls1.webp"
-          alt="Dashboard Overview"
+          alt="Section Schedule Lookup"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
@@ -182,7 +207,7 @@ const goback = () => {
       <div class="flex items-center justify-center" v-viewer>
         <img
           src="/webbasedls/ls2.webp"
-          alt="Dashboard Overview"
+          alt="Weekly Schedule View"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
@@ -220,7 +245,7 @@ const goback = () => {
       <div class="flex items-center justify-center" v-viewer>
         <img
           src="/webbasedls/ls2.webp"
-          alt="Dashboard Overview"
+          alt="Add New Schedule Form"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />

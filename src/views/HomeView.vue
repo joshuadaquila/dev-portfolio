@@ -33,7 +33,7 @@
 
           <!-- Description -->
           <motion.p
-            class="mt-3 sm:text-sm lg:text-lg text-center px-4"
+            class="mt-3 text-sm lg:text-lg text-center px-4"
             :initial="{ opacity: 0, y: 20 }"
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.8, delay: 0.5 }"
@@ -43,7 +43,7 @@
 
           <!-- Technology Icons -->
           <motion.div
-            class="flex my-6 flex-wrap justify-center gap-4"
+            class="flex lg:my-6 my-3 flex-wrap justify-center gap-1 lg:gap-4"
             :initial="{ scale: 1, opacity: 0 }"
             :animate="{ scale: 1.5, opacity: 1 }"
           >
@@ -51,7 +51,7 @@
               v-for="(icon, index) in techIcons"
               :key="index"
               :src="icon"
-              class="h-8 w-8"
+              class="lg:h-8 h-4 w-4 lg:w-8"
               :initial="{ opacity: 0 }"
               :while-hover="{ scale: 1.2 }"
               :animate="{ opacity: [0.3, 1, 0.3] }"

@@ -13,7 +13,6 @@
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >
       <div v-viewer>
-        <p class="hidden hover:block absolute">View Photo</p>
         <img
           :src="coverImage"
           tooltip="Cover Image"
@@ -24,7 +23,7 @@
     </motion.div>
 
     <!-- Text Content -->
-    <div class="flex-1 pl-6 transition-all duration-500 overflow-hidden">
+    <div class="flex-1 lg:pl-6 transition-all duration-500 overflow-hidden">
       <router-link
         :to="projectLink"
         class="text-2xl font-bold hover:underline hover:opacity-80 text-[#ecb365] mb-2"
