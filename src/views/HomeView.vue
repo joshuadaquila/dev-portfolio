@@ -43,7 +43,7 @@
 
           <!-- Technology Icons -->
           <motion.div
-            class="flex lg:my-6 my-3 flex-wrap justify-center gap-1 lg:gap-4"
+            class="flex my-8 flex-wrap justify-center gap-4"
             :initial="{ scale: 1, opacity: 0 }"
             :animate="{ scale: 1.5, opacity: 1 }"
           >
@@ -51,7 +51,7 @@
               v-for="(icon, index) in techIcons"
               :key="index"
               :src="icon"
-              class="lg:h-8 h-4 w-4 lg:w-8"
+              class="h-8 w-8"
               :initial="{ opacity: 0 }"
               :while-hover="{ scale: 1.2 }"
               :animate="{ opacity: [0.3, 1, 0.3] }"
@@ -64,9 +64,10 @@
             />
           </motion.div>
         </div>
-        <!-- <h1 class="text-xl font-semibold mb-4 text-white mt-4">{{ subtitle }}</h1> -->
+        <h1 class="text-xl font-semibold mb-4 text-white mt-4">{{ subtitle }}</h1>
+
         <!-- Scrollable Project Section -->
-        <div class="mt-4 rounded-md p-4 backdrop-blur-md bg-white bg-opacity-10">
+        <div class="rounded-md p-4 backdrop-blur-md bg-white bg-opacity-10">
           <ProjectCard
             v-for="(project, i) in projects"
             :key="i"
@@ -88,6 +89,7 @@ import AnimatedBackground from '../components/AnimatedBackground.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
 
 const title = '<CodeWithJoshua/>'
+const subtitle = '<Projects/>'
 const titlePrefix = title.slice(0, 9)
 const titleSuffix = title.slice(9)
 
