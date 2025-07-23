@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import SampleView from '../views/SampleView.vue'
 // Supports weights 100-900
 import '@fontsource-variable/lexend'
+import ClassSchedProjectView from '@/views/ClassSchedProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,6 +17,11 @@ const router = createRouter({
       path: '/sample',
       name: 'sample',
       component: SampleView,
+    },
+    {
+      path: '/projects/ccs-web-based-class-scheduling-system',
+      name: 'ccs-web-based-class-scheduling-system',
+      component: ClassSchedProjectView,
     },
   ],
 })

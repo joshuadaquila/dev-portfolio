@@ -17,42 +17,38 @@
   background-size: 250% 250%;
   animation: ovalGradientShift 40s ease-in-out infinite;
   z-index: 1;
-
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 /* Geometric pattern overlay */
 .animated-background::before {
   content: '';
   position: absolute;
-  top: -50%;
-  left: -50%;
-  /* width: 200%;
-  height: 200%; */
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
-  transform: scale(1);
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
   animation: patternFloat 60s linear infinite;
-  z-index: 0;
+  z-index: 0; /* visible below content, above base */
   pointer-events: none;
-  opacity: 0.8; /* Increased base opacity */
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 .animated-background:hover::before {
-  transform: scale(1.2) rotate(5deg);
-  opacity: 0.7; /* Increased hover opacity */
+  opacity: 0.6;
+  transform: translate(20px, 20px) scale(1.1) rotate(2deg);
 }
 
 .content {
   position: relative;
-  z-index: 10;
+  z-index: 2; /* on top of everything */
   color: #fefefe;
 }
 
-/* Background animation */
+/* Background gradient shift */
 @keyframes ovalGradientShift {
   0% {
     background-position: 20% 30%;
@@ -65,7 +61,7 @@
   }
 }
 
-/* Subtle pattern movement */
+/* Geometric pattern float */
 @keyframes patternFloat {
   0% {
     transform: translate(0, 0);

@@ -13,7 +13,13 @@
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >
       <div v-viewer>
-        <img :src="coverImage" alt="Cover" class="rounded-lg w-72 object-cover cursor-pointer" />
+        <p class="hidden hover:block absolute">View Photo</p>
+        <img
+          :src="coverImage"
+          tooltip="Cover Image"
+          alt="Cover"
+          class="rounded-lg w-72 object-cover cursor-zoom-in relative"
+        />
       </div>
     </motion.div>
 
