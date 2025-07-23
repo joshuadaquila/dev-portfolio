@@ -8,19 +8,24 @@
   >
     <!-- Animated Cover Image -->
     <motion.div
-      class="h-full overflow-hidden"
+      class="flex items-center overflow-hidden"
       :animate="{ width: hover ? '33%' : '0%' }"
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >
-      <img :src="coverImage" alt="Cover" class="w-64 object-cover" />
+      <img :src="coverImage" alt="Cover" class="rounded-lg w-72 object-cover" />
     </motion.div>
 
     <!-- Text Content -->
     <div class="flex-1 pl-6 transition-all duration-500 overflow-hidden">
-      <h2 class="text-2xl font-bold text-[#ecb365] mb-2">{{ title }}</h2>
+      <router-link
+        :to="projectLink"
+        class="text-2xl font-bold hover:underline hover:opacity-80 text-[#ecb365] mb-2"
+        >{{ title }}</router-link
+      >
       <p class="text-gray-300 mb-4">
         {{ description }}
       </p>
+      <p class="text-sm text-gray-200">Technology and Tools Used:</p>
 
       <!-- Tech Stack Icons -->
       <div class="flex flex-wrap items-center mt-4">
@@ -29,7 +34,8 @@
           :key="index"
           :src="tech"
           :alt="'Tech ' + index"
-          class="h-6 w-6 mr-3 mb-2 opacity-80 transition-opacity duration-300"
+          tooltip="tech"
+          class="h-6 mr-3 mb-2 opacity-80 rounded-full transition-opacity duration-300"
           :animate="{ opacity: [0.6, 1, 0.6] }"
           :transition="{
             duration: 2,
@@ -52,6 +58,7 @@ defineProps<{
   description: string
   techStack: string[]
   coverImage: string
+  projectLink: string
 }>()
 
 const hover = ref(false)

@@ -76,6 +76,7 @@
             :description="project.description"
             :techStack="project.techStack"
             :coverImage="project.coverImage"
+            :projectLink="project.projectLink"
           />
         </div>
       </div>
@@ -112,25 +113,28 @@ const techIcons = [
 
 const projects = [
   {
-    title: 'Portfolio Website',
+    title: 'CCS Web-Based Class Scheduling System',
     description:
-      'A personal portfolio showcasing my projects, skills, and contact information, built with Vue and TailwindCSS.',
+      'A web-based scheduling platform designed to simplify class planning and management for administrators, faculty, and students. Built with PHP, MySQL, and JavaScript, it offers smart scheduling, user role control, and real-time timetable generation—all in one intuitive interface.',
     techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
     ],
-    coverImage: '/profilepic.jpg',
+    coverImage: '/classSchedCover.png',
+    projectLink: '/projects/ccs-web-based-class-scheduling-system',
   },
   {
     title: 'E-commerce Platform',
     description:
       'A full-stack e-commerce application with user authentication, product management, and payment integration.',
     techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
     ],
     coverImage: '/profilepic.jpg',
+    projectLink: '/projects/e-commerce-platform',
   },
 ]
 </script>
