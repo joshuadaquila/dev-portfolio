@@ -70,7 +70,7 @@ const goback = () => {
     <motion.div class="flex items-center justify-center">
       <div v-viewer class="flex items-center justify-center cursor-zoom-in">
         <motion.img
-          src="/classSchedCover.png"
+          src="/classSchedCover.webp"
           alt="Class Scheduling"
           class="w-[100%] sm:w-[50%] rounded-lg m-4"
           :initial="{ opacity: 0, scale: 0.8 }"
@@ -118,7 +118,7 @@ const goback = () => {
 
       <div class="flex flex-col lg:flex-row items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls5.png"
+          src="/webbasedls/ls5.webp"
           alt="Dashboard Overview"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -131,7 +131,7 @@ const goback = () => {
     <div class="flex flex-col lg:flex-row justify-center lg:p-10">
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls4.png"
+          src="/webbasedls/ls4.webp"
           alt="Dashboard Overview"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -168,7 +168,7 @@ const goback = () => {
       </motion.div>
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls1.png"
+          src="/webbasedls/ls1.webp"
           alt="Dashboard Overview"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -181,7 +181,7 @@ const goback = () => {
     <div class="flex flex-col lg:flex-row justify-center lg:p-10">
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls2.png"
+          src="/webbasedls/ls2.webp"
           alt="Dashboard Overview"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -219,7 +219,7 @@ const goback = () => {
 
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls2.png"
+          src="/webbasedls/ls2.webp"
           alt="Dashboard Overview"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"

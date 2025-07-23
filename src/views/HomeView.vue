@@ -12,7 +12,7 @@
         <div class="flex-shrink-0 flex flex-col items-center">
           <!-- Profile Picture -->
           <motion.img
-            src="/profilepic.jpg"
+            src="/profilepic.webp"
             alt="Profile Picture"
             class="rounded-full h-32 w-32 mx-auto mb-4"
             :initial="{ opacity: 0, scale: 0.8 }"
@@ -121,7 +121,7 @@ const projects = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
     ],
-    coverImage: '/classSchedCover.png',
+    coverImage: '/classSchedCover.webp',
     projectLink: '/projects/ccs-web-based-class-scheduling-system',
   },
   {
@@ -133,7 +133,7 @@ const projects = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
     ],
-    coverImage: '/profilepic.jpg',
+    coverImage: '/profilepic.webp',
     projectLink: '/projects/e-commerce-platform',
   },
 ]
