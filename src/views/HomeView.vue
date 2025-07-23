@@ -43,7 +43,7 @@
 
           <!-- Technology Icons -->
           <motion.div
-            class="hidden lg:flex mt-6 flex-wrap justify-center gap-4"
+            class="flex my-6 flex-wrap justify-center gap-4"
             :initial="{ scale: 1, opacity: 0 }"
             :animate="{ scale: 1.5, opacity: 1 }"
           >
