@@ -8,7 +8,7 @@
 
 <style scoped>
 .animated-background {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
@@ -23,11 +23,11 @@
 /* Geometric pattern overlay */
 .animated-background::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
   background-size: 40px 40px;
   animation: patternFloat 60s linear infinite;

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-100 text-gray-900 flex flex-col lexend">
+  <div id="app" class="bg-[#041c32] text-gray-900 flex flex-col lexend">
     <main>
       <router-view />
     </main>

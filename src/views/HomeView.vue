@@ -4,7 +4,7 @@
       :initial="{ opacity: 0 }"
       :animate="{ opacity: 1 }"
       :transition="{ duration: 1 }"
-      class="h-screen flex flex-col items-center text-white px-4 py-6"
+      class="flex flex-col items-center text-white px-4 py-6"
     >
       <!-- Main container (with fixed layout and overflow control) -->
       <div class="w-full max-w-4xl flex flex-col h-full overflow-hidden">
@@ -66,9 +66,7 @@
         </div>
         <!-- <h1 class="text-xl font-semibold mb-4 text-white mt-4">{{ subtitle }}</h1> -->
         <!-- Scrollable Project Section -->
-        <div
-          class="flex-grow mt-4 overflow-y-auto rounded-md p-4 backdrop-blur-md bg-white bg-opacity-10"
-        >
+        <div class="mt-4 rounded-md p-4 backdrop-blur-md bg-white bg-opacity-10">
           <ProjectCard
             v-for="(project, i) in projects"
             :key="i"
@@ -123,6 +121,30 @@ const projects = [
     ],
     coverImage: '/classSchedCover.webp',
     projectLink: '/projects/ccs-web-based-class-scheduling-system',
+  },
+  {
+    title: 'E-commerce Platform',
+    description:
+      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
+    techStack: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
+    ],
+    coverImage: '/profilepic.webp',
+    projectLink: '/projects/e-commerce-platform',
+  },
+  {
+    title: 'E-commerce Platform',
+    description:
+      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
+    techStack: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
+    ],
+    coverImage: '/profilepic.webp',
+    projectLink: '/projects/e-commerce-platform',
   },
   {
     title: 'E-commerce Platform',
