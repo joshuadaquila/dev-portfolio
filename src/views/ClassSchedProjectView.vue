@@ -120,6 +120,7 @@ const goback = () => {
         <img
           src="/webbasedls/ls5.png"
           alt="Dashboard Overview"
+          loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>
@@ -132,6 +133,7 @@ const goback = () => {
         <img
           src="/webbasedls/ls4.png"
           alt="Dashboard Overview"
+          loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>
@@ -168,6 +170,7 @@ const goback = () => {
         <img
           src="/webbasedls/ls1.png"
           alt="Dashboard Overview"
+          loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>
@@ -180,6 +183,7 @@ const goback = () => {
         <img
           src="/webbasedls/ls2.png"
           alt="Dashboard Overview"
+          loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>
@@ -217,6 +221,7 @@ const goback = () => {
         <img
           src="/webbasedls/ls2.png"
           alt="Dashboard Overview"
+          loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>

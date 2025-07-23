@@ -26,7 +26,7 @@
             :animate="{ x: 0, opacity: 1 }"
             :transition="{ type: 'spring', stiffness: 80 }"
           >
-            <h1 class="lg:text-4xl sm:text-3xl font-bold text-[#ecb365] text-center">
+            <h1 class="lg:text-4xl text-3xl font-bold text-[#ecb365] text-center">
               {{ titlePrefix }}<span class="text-white">{{ titleSuffix }}</span>
             </h1>
           </motion.div>
