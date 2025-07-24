@@ -31,9 +31,18 @@
             </h1>
           </motion.div>
 
+          <div
+            class="flex w-[90%] lg:flex-row flex-col lg:flex-wrap lg:gap-3 gap-2 bg-white bg-opacity-10 px-2 py-1 outline outline-1 outline-white m-1 rounded-lg"
+          >
+            <a href="" class="flex content-center gap-1"><Mail /> joshuanomong@gmail.com</a>
+            <a href="" class="flex content-center gap-1"><Github /> joshuadaquila</a>
+            <p class="flex content-center gap-1"><PhoneCall /> 09357901126</p>
+            <p class="flex content-center gap-1"><Home />Sibalom, Antique, Philippines</p>
+          </div>
+
           <!-- Description -->
           <motion.p
-            class="mt-3 text-sm lg:text-lg text-center px-4"
+            class="mt-2 text-sm lg:text-lg text-center px-4"
             :initial="{ opacity: 0, y: 20 }"
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.8, delay: 0.5 }"
@@ -87,6 +96,7 @@
 import { motion } from 'motion-v'
 import AnimatedBackground from '../components/AnimatedBackground.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
+import { PhoneCall, Mail, Home, Github } from 'lucide-vue-next'
 
 const title = '<CodeWithJoshua/>'
 const subtitle = '<Projects/>'
@@ -94,7 +104,7 @@ const titlePrefix = title.slice(0, 9)
 const titleSuffix = title.slice(9)
 
 const description =
-  "I'm a passionate software developer with a focus on building clean, scalable, and performant applications. With a strong foundation in modern frameworks, design patterns, and development best practices, I create solutions that are both functional and user-friendly."
+  "I'm a passionate software developer with a strong foundation in modern frameworks, design patterns, and development best practices and building clean, scalable, and performant applications."
 
 const techIcons = [
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
@@ -139,16 +149,12 @@ const projects = [
   },
 
   {
-    title: 'E-commerce Platform',
+    title: 'CCS Library Management System',
     description:
-      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
-    techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
-    ],
-    coverImage: '/profilepic.webp',
-    projectLink: '/projects/e-commerce-platform',
+      'A C# desktop app built with WinForms and MySQL for managing library operations. Track students, inventory, and transactions in one intuitive dashboard—complete with printable logs and real-time borrow/return status tracking.',
+    techStack: ['.NET Framework', 'C#', 'MySQL'],
+    coverImage: '/desktopls/dslcover.webp',
+    projectLink: '/projects/library-system',
   },
   {
     title: 'E-commerce Platform',

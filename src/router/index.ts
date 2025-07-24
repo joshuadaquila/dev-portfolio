@@ -5,6 +5,7 @@ import SampleView from '../views/SampleView.vue'
 import '@fontsource-variable/lexend'
 import ClassSchedProjectView from '@/views/ClassSchedProjectView.vue'
 import AlumniHubProjectView from '@/views/AlumniHubProjectView.vue'
+import LibrarySysProjectView from '@/views/LibrarySysProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/projects/alumni-hub',
       name: 'alumni-hub',
       component: AlumniHubProjectView,
+    },
+    {
+      path: '/projects/library-system',
+      name: 'library-system',
+      component: LibrarySysProjectView,
     },
   ],
 })
