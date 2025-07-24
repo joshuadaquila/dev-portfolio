@@ -36,13 +36,11 @@
 
       <!-- Tech Stack Icons -->
       <div class="flex flex-wrap items-center mt-4">
-        <motion.img
+        <motion.p
           v-for="(tech, index) in techStack"
           :key="index"
-          :src="tech"
-          :alt="'Tech ' + index"
           tooltip="tech"
-          class="h-6 mr-3 mb-2 opacity-80 rounded-full transition-opacity duration-300"
+          class="mr-3 opacity-80 rounded-full text-sm m-1 transition-opacity duration-300 bg-[#064663] py-1 px-2"
           :animate="{ opacity: [0.6, 1, 0.6] }"
           :transition="{
             duration: 2,
@@ -50,7 +48,8 @@
             repeatType: 'mirror',
             delay: index * 0.1,
           }"
-        />
+          >{{ tech }}
+        </motion.p>
       </div>
     </div>
   </motion.div>

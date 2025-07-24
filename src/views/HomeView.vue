@@ -113,29 +113,31 @@ const techIcons = [
 
 const projects = [
   {
+    title: 'UA Alumni Engagement Hub',
+    description:
+      'A cross-platform alumni system that bridges graduates and universities through real-time chat, events, and tracer surveys—powered by AI. Built with React, React Native, and Express.js, it features AI-generated insight reports using OpenAI’s GPT model, turning alumni data into actionable recommendations for institutional improvement. Includes push notifications, profile engagement, media uploads, and dynamic reporting.',
+    techStack: [
+      'React',
+      'React Native',
+      'Express.js',
+      'MySQL',
+      'SQLite',
+      'Socket.IO',
+      'Firebase',
+      'OpenAI GPT',
+    ],
+    coverImage: '/alumnihub/alumniHubCover.webp',
+    projectLink: '/projects/alumni-hub',
+  },
+  {
     title: 'CCS Web-Based Class Scheduling System',
     description:
       'A web-based scheduling platform designed to simplify class planning and management for administrators, faculty, and students. Built with PHP, MySQL, and JavaScript, it offers smart scheduling, user role control, and real-time timetable generation—all in one intuitive interface.',
-    techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
-    ],
+    techStack: ['PHP', 'JavaScript', 'MySQL'],
     coverImage: '/classSchedCover.webp',
     projectLink: '/projects/ccs-web-based-class-scheduling-system',
   },
-  {
-    title: 'E-commerce Platform',
-    description:
-      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
-    techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
-    ],
-    coverImage: '/profilepic.webp',
-    projectLink: '/projects/e-commerce-platform',
-  },
+
   {
     title: 'E-commerce Platform',
     description:

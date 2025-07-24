@@ -2,7 +2,7 @@
 import { ArrowLeftCircle, CloudDownloadIcon, ExternalLinkIcon, Github } from 'lucide-vue-next'
 import { motion } from 'motion-v'
 
-const demolink = null
+const demolink = 'https://alumni-hub.netlify.app'
 const repolink = null
 const apklink = null
 
@@ -31,47 +31,67 @@ const goback = () => {
       :transition="{ duration: 0.5, delay: 0.5 }"
     >
       <h1 class="text-2xl lg:text-4xl text-center font-bold">
-        College of Computer Studies <br />
-        <span class="text-[#ecb365]">Web-Based Class Scheduling System</span>
+        University of Antique <br />
+        <span class="text-[#ecb365]">Alumni Engagement Hub</span>
       </h1>
-      <p class="mt-2 text-lg text-center">Class Scheduling Made Effortless — One Click at a Time</p>
+      <p class="mt-2 text-lg text-center">
+        Empowering Alumni Connections Through Smart Digital Engagement
+      </p>
     </motion.div>
 
     <p class="text-sm text-left mt-2">Technology and Tools Used:</p>
     <div
-      class="mb-2 flex bg-white bg-opacity-10 p-2 mt-2 outline outline-white outline-1 rounded-xl"
+      class="mb-2 flex flex-wrap justify-center bg-white bg-opacity-10 p-2 mt-2 outline outline-white outline-1 rounded-xl"
     >
       <div class="flex flex-col items-center mx-1">
-        <p class="text-xs">PHP</p>
+        <p class="text-xs">React</p>
       </div>
       <div class="flex flex-col items-center mx-1">
         <p class="text-xs">MySQL</p>
       </div>
       <div class="flex flex-col items-center mx-1">
-        <p class="text-xs">JavaScript</p>
+        <p class="text-xs">React Native</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <p class="text-xs">SQLite</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <p class="text-xs">Express.js</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <p class="text-xs">Socket.io</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <p class="text-xs">Firebase</p>
+      </div>
+      <div class="flex flex-col items-center mx-1">
+        <p class="text-xs">OpenAI GPT API</p>
       </div>
     </div>
 
     <div class="m-2 flex flex-col sm:flex-row text-sm">
-      <button
+      <a
+        :href="demolink ? demolink : '#'"
         :class="[
           ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline  outline-1',
           demolink ? 'bg-green-700 text-white outline-white' : 'hidden',
         ]"
       >
         <ExternalLinkIcon />
-        Live Demo
-      </button>
-      <button
+        Live Link
+      </a>
+      <a
+        :href="repolink ? repolink : '#'"
         :class="[
-          ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline  outline-1',
+          ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline outline-1',
           repolink ? 'bg-[#04293a] text-white outline-white' : 'hidden',
         ]"
       >
         <Github />
         Repository
-      </button>
-      <button
+      </a>
+      <a
+        :href="apklink ? apklink : '#'"
         :class="[
           ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline  outline-1',
           apklink ? 'bg-yellow-600 text-white outline-white' : 'hidden',
@@ -79,13 +99,13 @@ const goback = () => {
       >
         <CloudDownloadIcon />
         Apk Download
-      </button>
+      </a>
     </div>
 
     <motion.div class="flex items-center justify-center">
       <div v-viewer class="flex items-center justify-center cursor-zoom-in">
         <motion.img
-          src="/classSchedCover.webp"
+          src="/alumnihub/alumniHubCover.webp"
           alt="Class Scheduling"
           class="w-[100%] sm:w-[50%] rounded-lg m-2"
           :initial="{ opacity: 0, scale: 0.8 }"
@@ -103,26 +123,27 @@ const goback = () => {
     <div class="lg:w-[80%] m-2">
       <h2 class="text-2xl font-bold mb-2 lg:mt-10">Project Overview</h2>
       <p>
-        The College of Computer Studies Web-Based Class Scheduling System is a streamlined solution
-        built to simplify the creation, management, and viewing of class schedules for school
-        administrators, faculty, and students. Developed using PHP, HTML, CSS, JavaScript, and
-        MySQL, this system enables real-time data management, user access control, and an intuitive
-        interface to ensure efficient schedule generation and student-classroom coordination.
+        The University of Antique Alumni Engagement Hub is a dual-platform system built with React,
+        React Native, Express.js, MySQL, and SQLite, designed to strengthen engagement between the
+        university and its graduates through digital innovation. The system streamlines alumni
+        profiling, event coordination, real-time messaging, and data-driven tracer studies while
+        offering a social platform-like experience for graduates to interact.
       </p>
       <div>
         <h2 class="text-2xl font-bold mb-2 lg:mt-10 mt-4">Key Features:</h2>
         <ul class="list-disc pl-6 space-y-2">
           <li>
-            🗓️ Smart schedule creation with conflict checking by subject, room, and instructor
+            🔐 Authentication system with JWT-based login (React Admin + React Native user side)
           </li>
-          <li>🔐 Role-based access control for administrators and staff</li>
-          <li>
-            🏫 Modular data management: manage colleges, buildings, classrooms, curriculum, users,
-            and more
-          </li>
-          <li>📚 Automated section timetable generation with dynamic semester/year selection</li>
-          <li>🔎 Fast and intuitive UI with real-time search and filters for smooth navigation</li>
-          <li>✅ User-friendly form handling for error-free schedule input</li>
+          <li>🔔 Real-time notifications via OneSignal + Firebase Cloud Messaging</li>
+          <li>🧠 AI-powered report summaries using OpenAI GPT model for tracer study insights</li>
+          <li>📬 Live messaging using Socket.IO for alumni-staff interaction</li>
+          <li>📊 Advanced data profiling modules: Employment, Demographics, Contributions</li>
+          <li>📸 Engagement feed with media sharing, likes, and comments — similar to LinkedIn</li>
+          <li>🗓️ Event creation and attendance tracking with report exports (PDF)</li>
+          <li>📤 PDF export for reports like survey responses, alumni lists, and analytics</li>
+          <li>🎨 Styled using Tailwind CSS for consistency and responsiveness across platforms</li>
+          <li>💾 Multer-powered image upload system for secure photo contributions</li>
         </ul>
       </div>
     </div>

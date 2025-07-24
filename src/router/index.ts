@@ -4,6 +4,7 @@ import SampleView from '../views/SampleView.vue'
 // Supports weights 100-900
 import '@fontsource-variable/lexend'
 import ClassSchedProjectView from '@/views/ClassSchedProjectView.vue'
+import AlumniHubProjectView from '@/views/AlumniHubProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: '/projects/ccs-web-based-class-scheduling-system',
       name: 'ccs-web-based-class-scheduling-system',
       component: ClassSchedProjectView,
+    },
+    {
+      path: '/projects/alumni-hub',
+      name: 'alumni-hub',
+      component: AlumniHubProjectView,
     },
   ],
 })
