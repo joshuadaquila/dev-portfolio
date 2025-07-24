@@ -8,7 +8,7 @@
   >
     <!-- Animated Cover Image -->
     <motion.div
-      class="flex items-center overflow-hidden"
+      class="lg:flex hidden items-center overflow-hidden"
       :animate="{ width: hover ? '33%' : '0%' }"
       :transition="{ duration: 0.5, ease: 'easeInOut' }"
     >

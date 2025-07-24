@@ -156,20 +156,26 @@ const goback = () => {
         :while-in-view="{ x: 0, opacity: 1 }"
         :transition="{ delay: 0.5 }"
       >
-        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Dashboard Overview</h2>
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Admin Dashboard</h2>
         <p class="text-gray-300">
-          The heart of the system — a clean, organized admin dashboard that gives you a bird’s-eye
-          view of the entire scheduling system. Quickly access modules, see record counts, and
-          select school year and semester in one place.
+          A clean and intuitive admin dashboard showing the total alumni count and a visual chart of
+          graduation year and program distribution. All core modules are neatly placed in the
+          sidebar for quick access.
         </p>
       </motion.div>
 
-      <div class="flex flex-col lg:flex-row items-center justify-center" v-viewer>
+      <div class="flex flex-col lg:flex-row flex-wrap items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls5.webp"
-          alt="Dashboard Overview"
+          src="/alumnihub/ah1.webp"
+          alt="Dashboard 1"
           loading="lazy"
-          class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+          class="rounded-lg lg:m-4 mt-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+        <img
+          src="/alumnihub/ah10.webp"
+          alt="Dashboard 2"
+          loading="lazy"
+          class="rounded-lg hidden m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
         />
       </div>
     </div>
@@ -179,7 +185,7 @@ const goback = () => {
     <div class="flex flex-col lg:flex-row justify-center lg:p-10">
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls4.webp"
+          src="/alumnihub/ah2.webp"
           alt="User Management Panel"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -191,11 +197,10 @@ const goback = () => {
         :while-in-view="{ x: 0, opacity: 1 }"
         :transition="{ delay: 0.5 }"
       >
-        <h2 class="text-2xl font-bold mb-2 lg:mt-10">User Management Panel</h2>
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">List of Alumni</h2>
         <p class="text-gray-300">
-          Easily manage admin and staff accounts with this dynamic user table. Edit or delete users
-          with just a click, and maintain proper access rights to keep your system secure and
-          organized.
+          The alumni table features advanced filtering and export-ready data, making it easy for
+          admins to generate reports, print summaries, and conduct alumni profiling.
         </p>
       </motion.div>
     </div>
@@ -208,15 +213,15 @@ const goback = () => {
         :while-in-view="{ x: 0, opacity: 1 }"
         :transition="{ delay: 0.5 }"
       >
-        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Section Schedule Lookup</h2>
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Event Management</h2>
         <p class="text-gray-300">
-          Need to view or assign a schedule to a specific section? Just select the section name and
-          hit search. This module makes navigating section-based schedules quick and hassle-free.
+          Manage alumni events with date, time, venue, and attendee data. Events are categorized
+          into upcoming, ongoing, and past, allowing better tracking and participation management.
         </p>
       </motion.div>
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls1.webp"
+          src="/alumnihub/ah3.webp"
           alt="Section Schedule Lookup"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -229,7 +234,7 @@ const goback = () => {
     <div class="flex flex-col lg:flex-row justify-center lg:p-10">
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls2.webp"
+          src="/alumnihub/ah5.webp"
           alt="Weekly Schedule View"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
@@ -241,11 +246,10 @@ const goback = () => {
         :while-in-view="{ x: 0, opacity: 1 }"
         :transition="{ delay: 0.5 }"
       >
-        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Weekly Schedule View</h2>
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Graduate Tracer Survey Responses</h2>
         <p class="text-gray-300">
-          A full week at a glance. The system automatically arranges and displays schedules by day
-          and time block, showing assigned instructors, rooms, and subjects — all formatted for
-          clarity and accuracy.
+          All submitted tracer survey responses are listed with a “See Response” button, giving
+          admins direct access to alumni feedback and export options.
         </p>
       </motion.div>
     </div>
@@ -258,19 +262,179 @@ const goback = () => {
         :while-in-view="{ x: 0, opacity: 1 }"
         :transition="{ delay: 0.5 }"
       >
-        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Add New Schedule Form</h2>
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Community Messagebox</h2>
         <p class="text-gray-300">
-          Flexible schedule creation form with dropdown selectors and time inputs to avoid
-          conflicts.
+          Real-time chat interface for seamless admin-to-alumni communication. Powered by Socket.IO,
+          the chat ensures instant replies and engagement.
         </p>
       </motion.div>
 
       <div class="flex items-center justify-center" v-viewer>
         <img
-          src="/webbasedls/ls2.webp"
+          src="/alumnihub/ah4.webp"
           alt="Add New Schedule Form"
           loading="lazy"
           class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+    </div>
+
+    <div class="border w-full my-4 border-gray-600" />
+
+    <div class="flex flex-col lg:flex-row justify-center lg:p-10">
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ah6.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+        <img
+          src="/alumnihub/ah7.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 hidden lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+        <img
+          src="/alumnihub/ah8.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg hidden m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+
+      <motion.div
+        :initial="{ x: 200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Alumni Profiling Insights</h2>
+        <p class="text-gray-300">
+          The system presents powerful visual summaries of alumni demographics, employment, and
+          contributions through interactive pie charts—automatically interpreted using OpenAI’s GPT
+          model. These AI-powered insights help the university understand graduate engagement, align
+          academic offerings with industry trends, and recognize standout alumni.
+        </p>
+      </motion.div>
+    </div>
+
+    <div class="border w-full my-4 border-gray-600" />
+
+    <div class="flex flex-col lg:flex-row justify-center lg:p-10">
+      <motion.div
+        :initial="{ x: -200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">AI Data Analytics Report</h2>
+        <p class="text-gray-300">
+          OpenAI GPT model analyzes alumni tracer responses and generates written insights on career
+          progression, job satisfaction, and curriculum relevance.
+        </p>
+      </motion.div>
+
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ah9.webp"
+          alt="Add New Schedule Form"
+          loading="lazy"
+          class="rounded-lg m-4 lg:w-[80%] hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+    </div>
+
+    <div class="border w-full my-4 border-gray-600" />
+
+    <div class="flex flex-col lg:flex-row justify-center lg:p-10">
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ss2.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 w-64 hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+
+      <motion.div
+        :initial="{ x: 200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+        class="ml-4"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Real-Time Messaging</h2>
+        <p class="text-gray-300">
+          Chat like you're on Messenger! This live chat feature allows instant conversations between
+          alumni and admins—made possible by Socket.IO.
+        </p>
+      </motion.div>
+
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ss3.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 w-64 hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+
+      <motion.div
+        :initial="{ x: 200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+        class="ml-4"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Alumni Profile View</h2>
+        <p class="text-gray-300">
+          View detailed alumni profiles including name, course, and graduation year. A clean layout
+          ensures easy navigation to posts and updates.
+        </p>
+      </motion.div>
+    </div>
+
+    <div class="border w-full my-4 border-gray-600" />
+
+    <div class="flex flex-col lg:flex-row justify-center lg:p-10">
+      <motion.div
+        :initial="{ x: -200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+        class="ml-4"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Graduate Tracer Survey Form</h2>
+        <p class="text-gray-300">
+          Officially aligned with CHED standards, this mobile-optimized form allows alumni to submit
+          vital tracer survey data—quickly and accurately.
+        </p>
+      </motion.div>
+
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ss4.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 w-64 hover:scale-105 transition cursor-zoom-in"
+        />
+      </div>
+
+      <motion.div
+        :initial="{ x: -200, opacity: 0 }"
+        :while-in-view="{ x: 0, opacity: 1 }"
+        :transition="{ delay: 0.5 }"
+        class="ml-4"
+      >
+        <h2 class="text-2xl font-bold mb-2 lg:mt-10">Create a Post with Image Upload</h2>
+        <p class="text-gray-300">
+          Just like LinkedIn—users can post status updates, upload photos, and express thoughts.
+          Others can view, like, and comment for engagement.
+        </p>
+      </motion.div>
+
+      <div class="flex items-center justify-center" v-viewer>
+        <img
+          src="/alumnihub/ss5.webp"
+          alt="Weekly Schedule View"
+          loading="lazy"
+          class="rounded-lg m-4 w-64 hover:scale-105 transition cursor-zoom-in"
         />
       </div>
     </div>
