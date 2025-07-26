@@ -104,7 +104,7 @@ const titlePrefix = title.slice(0, 9)
 const titleSuffix = title.slice(9)
 
 const description =
-  "I'm a passionate software developer with a strong foundation in modern frameworks, design patterns, and development best practices and building clean, scalable, and performant applications."
+  'I’m a passionate software developer with a strong foundation in modern frameworks, design patterns, and development best practices, dedicated to building clean, scalable, and high-performance applications.'
 
 const techIcons = [
   'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
@@ -157,16 +157,20 @@ const projects = [
     projectLink: '/projects/library-system',
   },
   {
-    title: 'E-commerce Platform',
+    title: 'VermiExpert',
     description:
-      'A full-stack e-commerce application with user authentication, product management, and payment integration.',
+      'VermiExpert is an AI-powered mobile app that monitors and assesses vermibed health using real-time sensor data transmitted via Bluetooth. Paired with a hardware setup, it evaluates key environmental parameters—temperature, moisture, and pH—and classifies bed conditions using a trained Decision Tree model. ',
     techStack: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
+      'React Native',
+      'Machine Learning',
+      'IOT',
+      'Arduino',
+      'SQLite',
+      'Python',
+      'Rule-Based Expert System',
     ],
-    coverImage: '/profilepic.webp',
-    projectLink: '/projects/e-commerce-platform',
+    coverImage: '/vermi/vermicover.webp',
+    projectLink: '/projects/vermiexpert',
   },
 ]
 </script>

@@ -32,7 +32,7 @@
       <p class="text-gray-300 mb-4">
         {{ description }}
       </p>
-      <p class="text-sm text-gray-200">Technology and Tools Used:</p>
+      <!-- <p class="text-sm text-gray-200">Technology and Tools Used:</p> -->
 
       <!-- Tech Stack Icons -->
       <div class="flex flex-wrap items-center mt-4">
