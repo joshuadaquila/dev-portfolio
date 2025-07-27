@@ -112,7 +112,7 @@ import ProjectCard from '@/components/ProjectCard.vue'
 import { PhoneCall, Mail, Home, Github } from 'lucide-vue-next'
 
 const title = '<CodeWithJoshua/>'
-const subtitle = '<Projects/>'
+const subtitle = '<Works/>'
 const titlePrefix = title.slice(0, 9)
 const titleSuffix = title.slice(9)
 
@@ -160,6 +160,14 @@ const projects = [
     coverImage: '/classSchedCover.webp',
     projectLink: '/projects/ccs-web-based-class-scheduling-system',
   },
+  {
+    title: 'UA Hotel Management System',
+    description:
+      'A fully offline-capable Hotel Management System built with Electron.js to streamline operations for small to mid-sized hotels. From booking rooms and tracking guests to billing and generating reports, this system ensures reliable performance even without internet access—perfect for hotels in remote or bandwidth-limited areas.',
+    techStack: ['Electron.js', 'React', 'SQLite', 'Express.js'],
+    coverImage: '/hotelms/hotelmsCover.webp',
+    projectLink: '/projects/hotel-management-system',
+  },
 
   {
     title: 'CCS Library Management System',
@@ -176,7 +184,7 @@ const projects = [
     techStack: [
       'React Native',
       'Machine Learning',
-      'IOT',
+      'IoT',
       'Arduino',
       'SQLite',
       'Python',
@@ -189,9 +197,17 @@ const projects = [
     title: 'PlantGuardian',
     description:
       'PlantGuardian is a smart, sensor-integrated mobile application built with React Native that helps indoor plant lovers care for their greens with confidence. Through real-time Bluetooth communication with a custom hardware setup, the app measures light intensity and temperature, then uses a rule-based expert system to deliver science-backed care recommendations tailored to each plant species. ',
-    techStack: ['React Native', 'IOT', 'Arduino', 'SQLite', 'Rule-Based Expert System'],
+    techStack: ['React Native', 'IoT', 'Arduino', 'SQLite', 'Rule-Based Expert System'],
     coverImage: '/plantcare/plantcareCover.webp',
     projectLink: '/projects/plantcarerecommender-system',
+  },
+  {
+    title: '<CodeWithJoshua/> Portfolio Website',
+    description:
+      'This is a sleek, responsive portfolio website built with Vue.js, designed to showcase my projects, skills, and experience in an interactive and engaging way. It features smooth navigation, dynamic components, and a clean, modern UI — all powered by Vue’s reactive data handling and component-based architecture. Fully responsive and performance-optimized, this site ensures a consistent user experience across all devices.',
+    techStack: ['Built with ❤️ using Vue.js'],
+    coverImage: '',
+    projectLink: '',
   },
 ]
 </script>

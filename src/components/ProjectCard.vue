@@ -1,15 +1,17 @@
 <template>
   <motion.div
-    class="relative w-full rounded-lg shadow-lg bg-[#04293A] text-white p-6 my-4 overflow-hidden flex lg:flex-row flex-col items-stretch"
+    :class="[
+      'relative w-full rounded-lg shadow-lg bg-[#04293A] text-white p-6 my-4 overflow-hidden flex lg:flex-row flex-col items-stretch',
+      coverImage ? '' : 'outline outline-1 outline-[#ecb365]',
+    ]"
     :animate="{ y: [0, -5, 0] }"
     :transition="{ duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'easeInOut' }"
   >
     <!-- Animated Cover Image -->
-    <motion.div class="flex items-center overflow-hidden">
+    <motion.div v-if="coverImage" :class="['flex items-center overflow-hidden']">
       <div v-viewer>
         <img
           :src="coverImage"
-          tooltip="Cover Image"
           alt="Cover"
           class="rounded-lg w-72 object-cover my-2 cursor-zoom-in relative"
         />

@@ -7,6 +7,7 @@ import AlumniHubProjectView from '@/views/AlumniHubProjectView.vue'
 import LibrarySysProjectView from '@/views/LibrarySysProjectView.vue'
 import VermiProjectView from '@/views/VermiProjectView.vue'
 import PlantCareProjectView from '@/views/PlantCareProjectView.vue'
+import HotelSysProjectView from '@/views/HotelSysProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +46,11 @@ const router = createRouter({
       path: '/projects/plantcarerecommender-system',
       name: 'plantcarerecommender-system',
       component: PlantCareProjectView,
+    },
+    {
+      path: '/projects/hotel-management-system',
+      name: 'hotel-management-system',
+      component: HotelSysProjectView,
     },
   ],
   scrollBehavior() {
