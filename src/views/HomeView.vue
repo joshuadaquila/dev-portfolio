@@ -153,6 +153,22 @@ const projects = [
     projectLink: '/projects/alumni-hub',
   },
   {
+    title: 'Patnongon Sangguniang Kabataan Event Management System',
+    description:
+      'A smart feedback-driven event platform empowering local youth councils to engage with the community. SK officials can send real-time announcements and event alerts, while residents share feedback to help improve future services—an intelligent bridge between SK governance and the people they serve.',
+    techStack: [
+      'React',
+      'React Native',
+      'Express.js',
+      'MySQL',
+      'Socket.IO',
+      'Machine Learning',
+      'Python',
+    ],
+    coverImage: '/sk/skCover.webp',
+    projectLink: '/projects/sk-event-management-system',
+  },
+  {
     title: 'CCS Web-Based Class Scheduling System',
     description:
       'A web-based scheduling platform designed to simplify class planning and management for administrators, faculty, and students. Built with PHP, MySQL, and JavaScript, it offers smart scheduling, user role control, and real-time timetable generation—all in one intuitive interface.',

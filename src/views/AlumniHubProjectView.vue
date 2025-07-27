@@ -4,7 +4,8 @@ import { motion } from 'motion-v'
 
 const demolink = 'https://alumni-hub.netlify.app'
 const repolink = null
-const apklink = null
+const apklink =
+  'https://github.com/joshuadaquila/alumni-hub-mobile/releases/download/apk-release/alumnihub.apk'
 
 const goback = () => {
   window.history.back()
@@ -72,6 +73,7 @@ const goback = () => {
     <div class="m-2 flex flex-col sm:flex-row text-sm">
       <a
         :href="demolink ? demolink : '#'"
+        target="_blank"
         :class="[
           ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline  outline-1',
           demolink ? 'bg-green-700 text-white outline-white' : 'hidden',

@@ -2,9 +2,10 @@
 import { ArrowLeftCircle, CloudDownloadIcon, ExternalLinkIcon, Github } from 'lucide-vue-next'
 import { motion } from 'motion-v'
 
-const demolink = 'https://alumni-hub.netlify.app'
+const demolink = null
 const repolink = null
-const apklink = null
+const apklink =
+  'https://github.com/joshuadaquila/vermiExpertApp/releases/download/apk-release/vermi-appv2.1.apk'
 
 const goback = () => {
   window.history.back()

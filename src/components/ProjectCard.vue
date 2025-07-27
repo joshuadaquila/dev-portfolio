@@ -23,8 +23,8 @@
       <router-link
         :to="projectLink"
         class="text-2xl font-bold hover:underline hover:opacity-80 text-[#ecb365] mb-2"
-        >{{ title }}</router-link
-      >
+        >{{ title }}
+      </router-link>
       <p class="text-gray-300 mb-4">
         {{ description }}
       </p>

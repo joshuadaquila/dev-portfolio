@@ -8,6 +8,7 @@ import LibrarySysProjectView from '@/views/LibrarySysProjectView.vue'
 import VermiProjectView from '@/views/VermiProjectView.vue'
 import PlantCareProjectView from '@/views/PlantCareProjectView.vue'
 import HotelSysProjectView from '@/views/HotelSysProjectView.vue'
+import SkProjectView from '@/views/SkProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +52,11 @@ const router = createRouter({
       path: '/projects/hotel-management-system',
       name: 'hotel-management-system',
       component: HotelSysProjectView,
+    },
+    {
+      path: '/projects/sk-event-management-system',
+      name: 'sk-event-management-system',
+      component: SkProjectView,
     },
   ],
   scrollBehavior() {
