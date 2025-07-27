@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SampleView from '../views/SampleView.vue'
-// Supports weights 100-900
 import '@fontsource-variable/lexend'
 import ClassSchedProjectView from '@/views/ClassSchedProjectView.vue'
 import AlumniHubProjectView from '@/views/AlumniHubProjectView.vue'
 import LibrarySysProjectView from '@/views/LibrarySysProjectView.vue'
 import VermiProjectView from '@/views/VermiProjectView.vue'
+import PlantCareProjectView from '@/views/PlantCareProjectView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,7 +41,15 @@ const router = createRouter({
       name: 'vermiexpert',
       component: VermiProjectView,
     },
+    {
+      path: '/projects/plantcarerecommender-system',
+      name: 'plantcarerecommender-system',
+      component: PlantCareProjectView,
+    },
   ],
+  scrollBehavior() {
+    return { top: 0 }
+  },
 })
 
 export default router

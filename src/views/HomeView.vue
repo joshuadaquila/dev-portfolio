@@ -32,12 +32,25 @@
           </motion.div>
 
           <div
-            class="flex w-[90%] lg:flex-row flex-col lg:flex-wrap lg:gap-3 gap-2 bg-white bg-opacity-10 px-2 py-1 outline outline-1 outline-white m-1 rounded-lg"
+            class="flex lg:flex-row flex-col gap-1 lg:gap-2 lg:flex-wrap bg-white bg-opacity-10 px-2 py-1 outline outline-1 outline-white m-1 rounded-lg"
           >
-            <a href="" class="flex content-center gap-1"><Mail /> joshuanomong@gmail.com</a>
-            <a href="" class="flex content-center gap-1"><Github /> joshuadaquila</a>
-            <p class="flex content-center gap-1"><PhoneCall /> 09357901126</p>
-            <p class="flex content-center gap-1"><Home />Sibalom, Antique, Philippines</p>
+            <div class="flex flex-col gap-1 lg:gap-2">
+              <a
+                href="mailto:joshuanomong@gmail.com"
+                class="flex hover:text-blue-400 content-center gap-1"
+                ><Mail /> joshuanomong@gmail.com</a
+              >
+              <a
+                href="https://github.com/joshuadaquila"
+                class="flex hover:text-blue-400 content-center gap-1"
+                ><Github /> joshuadaquila</a
+              >
+            </div>
+
+            <div class="flex flex-col gap-1 lg:gap-2">
+              <p class="flex content-center gap-1"><PhoneCall /> +63 935 790 1126</p>
+              <p class="flex content-center gap-1"><Home />Sibalom, Antique, Philippines</p>
+            </div>
           </div>
 
           <!-- Description -->
@@ -171,6 +184,14 @@ const projects = [
     ],
     coverImage: '/vermi/vermicover.webp',
     projectLink: '/projects/vermiexpert',
+  },
+  {
+    title: 'PlantGuardian',
+    description:
+      'PlantGuardian is a smart, sensor-integrated mobile application built with React Native that helps indoor plant lovers care for their greens with confidence. Through real-time Bluetooth communication with a custom hardware setup, the app measures light intensity and temperature, then uses a rule-based expert system to deliver science-backed care recommendations tailored to each plant species. ',
+    techStack: ['React Native', 'IOT', 'Arduino', 'SQLite', 'Rule-Based Expert System'],
+    coverImage: '/plantcare/plantcareCover.webp',
+    projectLink: '/projects/plantcarerecommender-system',
   },
 ]
 </script>

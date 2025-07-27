@@ -1,23 +1,17 @@
 <template>
   <motion.div
-    class="relative w-full rounded-lg shadow-lg bg-[#04293A] text-white p-6 my-4 overflow-hidden flex items-stretch"
-    :animate="{ y: [0, -10, 0] }"
+    class="relative w-full rounded-lg shadow-lg bg-[#04293A] text-white p-6 my-4 overflow-hidden flex lg:flex-row flex-col items-stretch"
+    :animate="{ y: [0, -5, 0] }"
     :transition="{ duration: 3, repeat: Infinity, repeatType: 'loop', ease: 'easeInOut' }"
-    @mouseenter="hover = true"
-    @mouseleave="hover = false"
   >
     <!-- Animated Cover Image -->
-    <motion.div
-      class="lg:flex hidden items-center overflow-hidden"
-      :animate="{ width: hover ? '33%' : '0%' }"
-      :transition="{ duration: 0.5, ease: 'easeInOut' }"
-    >
+    <motion.div class="flex items-center overflow-hidden">
       <div v-viewer>
         <img
           :src="coverImage"
           tooltip="Cover Image"
           alt="Cover"
-          class="rounded-lg w-72 object-cover cursor-zoom-in relative"
+          class="rounded-lg w-72 object-cover my-2 cursor-zoom-in relative"
         />
       </div>
     </motion.div>
@@ -57,7 +51,7 @@
 
 <script lang="ts" setup>
 import { motion } from 'motion-v'
-import { ref } from 'vue'
+// import { ref } from 'vue'
 
 defineProps<{
   title: string
@@ -67,5 +61,5 @@ defineProps<{
   projectLink: string
 }>()
 
-const hover = ref(false)
+// const hover = ref(false)
 </script>
