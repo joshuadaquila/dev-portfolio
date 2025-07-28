@@ -4,7 +4,8 @@ import { motion } from 'motion-v'
 
 const demolink = null
 const repolink = null
-const apklink = null
+const apklink =
+  'https://github.com/joshuadaquila/vermiExpertApp/releases/download/apk-release/smgv2.2.apk'
 
 const goback = () => {
   window.history.back()

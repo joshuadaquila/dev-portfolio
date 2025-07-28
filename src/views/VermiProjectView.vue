@@ -3,7 +3,7 @@ import { ArrowLeftCircle, CloudDownloadIcon, ExternalLinkIcon, Github } from 'lu
 import { motion } from 'motion-v'
 
 const demolink = null
-const repolink = null
+const repolink = 'https://github.com/joshuadaquila/vermiExpertApp.git'
 const apklink =
   'https://github.com/joshuadaquila/vermiExpertApp/releases/download/apk-release/vermi-appv2.1.apk'
 
@@ -71,6 +71,7 @@ const goback = () => {
       </a>
       <a
         :href="repolink ? repolink : '#'"
+        target="_blank"
         :class="[
           ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline outline-1',
           repolink ? 'bg-[#04293a] text-white outline-white' : 'hidden',

@@ -3,7 +3,7 @@ import { ArrowLeftCircle, CloudDownloadIcon, ExternalLinkIcon, Github } from 'lu
 import { motion } from 'motion-v'
 
 const demolink = 'https://patnongon-sk-event-system.netlify.app/login'
-const repolink = null
+const repolink = 'https://github.com/joshuadaquila/sk-feedback-system-frontend.git'
 const apklink =
   'https://github.com/joshuadaquila/sk-feedback-system-frontend/releases/download/apk-release/app-release.apk'
 
@@ -74,7 +74,9 @@ const goback = () => {
         <ExternalLinkIcon />
         Live Demo
       </a>
-      <button
+      <a
+        :href="repolink ? repolink : '#'"
+        target="_blank"
         :class="[
           ' px-4 m-1 py-1 rounded-sm flex items-center justify-center outline  outline-1',
           repolink ? 'bg-[#04293a] text-white outline-white' : 'hidden',
@@ -82,7 +84,7 @@ const goback = () => {
       >
         <Github />
         Repository
-      </button>
+      </a>
       <a
         v-if="apklink"
         :href="apklink"
